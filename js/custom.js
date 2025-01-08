@@ -504,6 +504,7 @@ const offersSlider = new Swiper('.offers', {
 
 const ownerSlider = new Swiper('.owner-slider', {
     effect: 'fade',
+    loop: true,
     allowTouchMove: true,
     fadeEffect: {
         crossFade: true
@@ -514,6 +515,11 @@ const ownerSlider = new Swiper('.owner-slider', {
         992: {
             autoHeight: false,
         },
+    },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
     navigation: {
         nextEl: '.stages-slider-button-next',
